@@ -11,6 +11,7 @@ type Props = {
   footerIcon?: LucideIcon;
   showProgress?: boolean;
   progressPercentage?: number;
+  isWide?: boolean;
 };
 
 export default function StatCard({
@@ -24,13 +25,14 @@ export default function StatCard({
   footerIcon: FooterIcon,
   showProgress,
   progressPercentage = 66,
-  isWide = false// إضافة خاصية للتحكم بالعرض
+  isWide = false // إضافة خاصية للتحكم بالعرض
 }: Props) {
   return (
     <div 
       dir="ltr" 
       className={`text-left bg-white rounded-xl border border-gray-100 shadow-sm flex flex-col justify-between h-full ${
         isWide ? 'col-span-2' : ''
+        
       }`}
       
       style={{ minHeight: '100px' }} // تصغير الارتفاع
