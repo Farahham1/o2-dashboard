@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
-import DashboardLayout from "@/components/layout/DashboardLayout";
 import Sidebar from "@/components/layout/Sidebar";
 // إعداد الخط
 const openSans = Open_Sans({
